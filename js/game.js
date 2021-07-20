@@ -33,7 +33,7 @@ let questions = [
     choice2: "Appler",
     choice3: "Oranger",
     choice4: "Strawberryr",
-    correctAnswer: 3,
+    correctAnswer: 1,
   },
   {
     question: "Which of the following is not a fruit?",
@@ -41,7 +41,7 @@ let questions = [
     choice2: "Appleg",
     choice3: "Orangeg",
     choice4: "Strawberryg",
-    correctAnswer: 2,
+    correctAnswer: 1,
   },
   {
     question: "Which of the following is not a fruit?",
@@ -70,7 +70,7 @@ getNewQuestion = () => {
     return window.location.assign("/end.html");
   }
   questionCounter++;
-  progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+  progressText.innerText = `Pregunta ${questionCounter} de ${MAX_QUESTIONS}`;
   progressBarFull.style.width = `${(questionCounter * 100) / MAX_QUESTIONS}%`;
 
   const questionsIndex = Math.floor(Math.random() * availableQuestions.length);

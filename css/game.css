@@ -4,11 +4,16 @@ body {
 .choice-container {
   display: flex;
   margin-bottom: 0.8rem;
+  margin-left: 0.8rem;
   width: 100%;
   border-radius: 4px;
   font-size: 3rem;
-  min-width: 50rem;
-  max-width: 50rem;
+  max-width: 92vw;
+  min-width: 92vw;
+}
+
+#question {
+  margin-left: 0.8rem;
 }
 
 .choice-container:hover {
@@ -65,7 +70,7 @@ body {
   height: 3rem;
   border: 0.2rem solid rgb(11, 223, 36);
   margin-top: 2rem;
-  border-radius: 50px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -77,17 +82,23 @@ body {
 
 #hud {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between ;
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     h1 {
         font-size: 2.5rem;
         color: #fff;
         margin-bottom: 2.2rem;
       }
     
+      #hud {
+        display: flex;
+        justify-content:space-evenly ;
+        height: auto;
+      }
+
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -109,7 +120,7 @@ body {
         width: 14rem;
         height: 2rem;
         border: 0.2rem solid rgb(11, 223, 36);
-        border-radius: 50px;
+        border-radius: 3px;
         overflow: hidden;
       }
       
